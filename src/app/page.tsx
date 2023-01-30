@@ -1,5 +1,3 @@
-import { Footer } from "@/components";
-import Navbar from "@/components/NavBar";
 import {
   Hero,
   About,
@@ -11,9 +9,12 @@ import {
   Feedback,
 } from "@/containers";
 
+import { Footer } from "@/components";
+import Navbar from "@/components/NavBar";
+
 export default function Home() {
   return (
-    <>
+    <main className="bg-black overflow-hidden">
       <Navbar />
       <Hero />
       <About />
@@ -24,6 +25,6 @@ export default function Home() {
       <Insights />
       <Feedback />
       <Footer />
-    </>
+    </main>
   );
 }
