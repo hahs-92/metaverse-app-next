@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
