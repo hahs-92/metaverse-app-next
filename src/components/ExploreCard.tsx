@@ -22,7 +22,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({
   active,
   handleClick,
 }) => (
-  <motion.div
+  <motion.article
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}
     className={`relative ${
       active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
@@ -39,7 +39,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+      <section className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
@@ -55,9 +55,9 @@ const ExploreCard: React.FC<ExploreCardProps> = ({
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>
-      </div>
+      </section>
     )}
-  </motion.div>
+  </motion.article>
 );
 
 export default ExploreCard;
