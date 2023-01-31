@@ -11,7 +11,7 @@ const NewFeatures: React.FC<NewFeaturesProps> = ({
   title,
   subtitle,
 }) => (
-  <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
+  <article className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
     <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
     >
@@ -23,7 +23,7 @@ const NewFeatures: React.FC<NewFeaturesProps> = ({
     <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
       {subtitle}
     </p>
-  </div>
+  </article>
 );
 
 export default NewFeatures;

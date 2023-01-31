@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from "../utils/motion";
 
 type TypingTextProps = {
   title: string;
-  textStyles: string;
+  textStyles?: string;
 };
 
 export const TypingText = ({ title, textStyles }: TypingTextProps) => (
@@ -24,7 +24,7 @@ export const TypingText = ({ title, textStyles }: TypingTextProps) => (
 
 type TitleTextProps = {
   title: ReactNode | string;
-  textStyles: string;
+  textStyles?: string;
 };
 
 export const TitleText = ({ title, textStyles }: TitleTextProps) => (

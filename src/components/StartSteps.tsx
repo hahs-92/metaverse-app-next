@@ -1,12 +1,12 @@
 import styles from "../styles";
 
 type StartStepsProps = {
-  number: number;
+  number: string;
   text: string;
 };
 
 const StartSteps: React.FC<StartStepsProps> = ({ number, text }) => (
-  <div className={`${styles.flexCenter} flex-row`}>
+  <article className={`${styles.flexCenter} flex-row`}>
     <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
     >
@@ -15,7 +15,7 @@ const StartSteps: React.FC<StartStepsProps> = ({ number, text }) => (
     <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
       {text}
     </p>
-  </div>
+  </article>
 );
 
 export default StartSteps;
