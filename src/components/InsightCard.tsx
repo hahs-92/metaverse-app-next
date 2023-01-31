@@ -17,7 +17,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
   subtitle,
   index,
 }) => (
-  <motion.div
+  <motion.article
     variants={fadeIn("up", "spring", index * 0.5, 1)}
     className="flex md:flex-row flex-col gap-4"
   >
@@ -31,7 +31,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
         <h4 className="font-normal lg:text-[42px] text-[26px] text-white">
           {title}
         </h4>
-        <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
+        <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-slate-300">
           {subtitle}
         </p>
       </div>
@@ -44,7 +44,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
         />
       </div>
     </div>
-  </motion.div>
+  </motion.article>
 );
 
 export default InsightCard;
